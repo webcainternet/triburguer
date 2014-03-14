@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+     <title>WebCA Turismo</title>
+     <meta charset="utf-8">
+     <meta name = "format-detection" content = "telephone=no" />
+     <link rel="icon" href="images/favicon.ico">
+     <link rel="shortcut icon" href="images/favicon.ico" />
+     <link rel="stylesheet" href="css/owl.carousel.css">
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/camera.css">
+
+
+     <script src="js/jquery.js"></script>
+     <script src="js/jquery-migrate-1.1.1.js"></script>
+     <script src="js/script.js"></script> 
+     <script src="js/superfish.js"></script>
+     <script src="js/jquery.ui.totop.js"></script>
+     <script src="js/jquery.equalheights.js"></script>
+     <script src="js/jquery.mobilemenu.js"></script>
+     <script src="js/jquery.easing.1.3.js"></script>
+     <script src="js/camera.js"></script>
+     <!--[if (gt IE 9)|!(IE)]><!-->
+     <script src="js/jquery.mobile.customized.min.js"></script>
+     <!--<![endif]-->
+     <script src="js/owl.carousel.js"></script> 
+     <script>
+ 
+       
+       $(document).ready(function(){
+          jQuery('#camera_wrap').camera({
+            loader: false,
+            pagination: false ,
+            minHeight: '250',
+            thumbnails: false,
+            height: '30.4375%',
+            caption: true,
+            navigation: true,
+            fx: 'mosaic'
+          });
+      /*carousel*/
+        var owl = $("#owl"); 
+            owl.owlCarousel({
+            items : 1, //10 items above 1000px browser width
+            itemsDesktop : [995,1], //5 items between 1000px and 901px
+            itemsDesktopSmall : [767, 1], // betweem 900px and 601px
+            itemsTablet: [700, 1], //2 items between 600 and 0
+            itemsMobile : [479, 1], // itemsMobile disabled - inherit from itemsTablet option
+            navigation : true,
+            pagination :  false
+            });
+
+         /*Back to Top*/
+        $().UItoTop({ easingType: 'easeOutQuart' });
+     }) 
+
+
+
+     </script>
+
+      <!--[if lt IE 8]>
+       <div style=' clear: both; text-align:center; position: relative;'>
+         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+         </a>
+      </div>
+    <![endif]-->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <link rel="stylesheet" media="screen" href="css/ie.css">
+
+
+    <![endif]-->
+
+    <!-- Ancora animada -->
+      <script type="text/javascript">
+      $.fn.ancora = function(){
+              $('html,body').animate({scrollTop:$(this).offset().top});
+      }
+      //COLOCANDO EM TODOS LINKS QUE O HREF INICIA COM #
+      $(function(){
+              $('a[href^=#]').click(function(){
+                      $($(this).attr('href')).ancora();
+                      return false;
+              })
+      })
+      </script>
+    <!-- Ancora animada FIM --> 
+
+
+    <!-- Parallax -->
+    <script src="js/stellar.js"></script>
+    <script>
+    $(function(){
+      $.stellar({
+        horizontalScrolling: false,
+        verticalOffset: 40
+      });
+    });
+    </script>
+    <!-- Parallax FIM -->
+
+
+
+  <!-- Add mousewheel plugin (this is optional) -->
+  <script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+  <!-- Add fancyBox main JS and CSS files -->
+  <script type="text/javascript" src="fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
+  <link rel="stylesheet" type="text/css" href="fancybox/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+  <!-- Add Button helper (this is optional) -->
+  <link rel="stylesheet" type="text/css" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
+  <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+
+  <!-- Add Thumbnail helper (this is optional) -->
+  <link rel="stylesheet" type="text/css" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+  <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+  <!-- Add Media helper (this is optional) -->
+  <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+      /*
+       *  Simple image gallery. Uses default settings
+       */
+
+      $('.fancybox').fancybox();
+
+      /*
+       *  Different effects
+       */
+
+      // Change title type, overlay closing speed
+      $(".fancybox-effects-a").fancybox({
+        helpers: {
+          title : {
+            type : 'outside'
+          },
+          overlay : {
+            speedOut : 0
+          }
+        }
+      });
+
+      // Disable opening and closing animations, change title type
+      $(".fancybox-effects-b").fancybox({
+        openEffect  : 'none',
+        closeEffect : 'none',
+
+        helpers : {
+          title : {
+            type : 'over'
+          }
+        }
+      });
+
+      // Set custom style, close if clicked, change title type and overlay color
+      $(".fancybox-effects-c").fancybox({
+        wrapCSS    : 'fancybox-custom',
+        closeClick : true,
+
+        openEffect : 'none',
+
+        helpers : {
+          title : {
+            type : 'inside'
+          },
+          overlay : {
+            css : {
+              'background' : 'rgba(238,238,238,0.85)'
+            }
+          }
+        }
+      });
+
+      // Remove padding, set opening and closing animations, close if clicked and disable overlay
+      $(".fancybox-effects-d").fancybox({
+        padding: 0,
+
+        openEffect : 'elastic',
+        openSpeed  : 150,
+
+        closeEffect : 'elastic',
+        closeSpeed  : 150,
+
+        closeClick : true,
+
+        helpers : {
+          overlay : null
+        }
+      });
+
+      /*
+       *  Button helper. Disable animations, hide close button, change title type and content
+       */
+
+      $('.fancybox-buttons').fancybox({
+        openEffect  : 'none',
+        closeEffect : 'none',
+
+        prevEffect : 'none',
+        nextEffect : 'none',
+
+        closeBtn  : false,
+
+        helpers : {
+          title : {
+            type : 'inside'
+          },
+          buttons : {}
+        },
+
+        afterLoad : function() {
+          this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+        }
+      });
+
+
+      /*
+       *  Thumbnail helper. Disable animations, hide close button, arrows and slide to next gallery item if clicked
+       */
+
+      $('.fancybox-thumbs').fancybox({
+        prevEffect : 'none',
+        nextEffect : 'none',
+
+        closeBtn  : false,
+        arrows    : false,
+        nextClick : true,
+
+        helpers : {
+          thumbs : {
+            width  : 50,
+            height : 50
+          }
+        }
+      });
+
+      /*
+       *  Media helper. Group items, disable animations, hide arrows, enable media and button helpers.
+      */
+      $('.fancybox-media')
+        .attr('rel', 'media-gallery')
+        .fancybox({
+          openEffect : 'none',
+          closeEffect : 'none',
+          prevEffect : 'none',
+          nextEffect : 'none',
+
+          arrows : false,
+          helpers : {
+            media : {},
+            buttons : {}
+          }
+        });
+
+      /*
+       *  Open manually
+       */
+
+      $("#fancybox-manual-a").click(function() {
+        $.fancybox.open('1_b.jpg');
+      });
+
+      $("#fancybox-manual-b").click(function() {
+        $.fancybox.open({
+          href : 'iframe.html',
+          type : 'iframe',
+          padding : 5
+        });
+      });
+
+      $("#fancybox-manual-c").click(function() {
+        $.fancybox.open([
+          {
+            href : '1_b.jpg',
+            title : 'My title'
+          }, {
+            href : '2_b.jpg',
+            title : '2nd title'
+          }, {
+            href : '3_b.jpg'
+          }
+        ], {
+          helpers : {
+            thumbs : {
+              width: 75,
+              height: 50
+            }
+          }
+        });
+      });
+
+
+    });
+  </script>
+  <style type="text/css">
+    .fancybox-custom .fancybox-skin {
+      box-shadow: 0 0 50px #222;
+    }
+
+  </style>
+
+
+
+
+    <style>
+    .photo {
+      background-attachment: fixed;
+      background-position: 50% 0;
+      background-repeat: no-repeat;
+      height: 600px;
+      position: relative;
+    }
+    .photo span {
+      bottom: 0;
+      color: white;
+      display: block;
+      left: 50%;
+      margin-left: -640px;
+      font-size: 38px;
+      padding: 10px;
+      position: absolute;
+      text-shadow: 0 2px 0 black, 0 0 10px black;
+      width: 1280px;
+    }
+    .bgphoto1 {
+      background-position: 0px -100px;
+      background-position-x: center;
+      background-image: url('images/cristo_redentor_500a97ff4d728112aa787035f48ca31f_cristo-redentor-1321322127_4.jpg');
+    }
+
+    .titlem2 {
+      /* color: #9c9a9b; */
+      /* font-size: 34px; */
+    }
+    .titlem1 {
+      background-color: #f9837a;
+      color: #FFF;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .titlem3 {
+      font-size: 14px;
+      text-align: right;
+      font: bold 48px/48px 'Kreon', serif;
+      text-align: right;
+    }
+    </style>
+
+     </head>
+
+     <body class="page1" id="top">
+
+    <!-- Google Analytics -->
+     <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-48981703-1', 'helicopterorj.com.br');
+      ga('send', 'pageview');
+    </script>
+     
+
+<!--==============================Slider=================================-->
+<div class="slider_wrapper" data-stellar-background-ratio="0.5">
+
+
+
+
+    <div class="photo bgphoto1" data-stellar-background-ratio="0.5">
+
+      <div class="caption2 fadeIn" style="visibility: visible; opacity: 1; padding-top: 300px;">
+        <div style="background-color: #FFAB1E;padding: 10px;"><a href="#contato">Solicite orçamento!</a></div>
+      </div>
+
+    </div>
+    
+
+
+
+
+     
+</div>
+
+
+<!--==============================Content=================================-->
+<div class="content" data-stellar-background-ratio="0.5">
+
+
+  <div class="container_12 center">
+      <div>
+          <div class="title col1"><span class="titlem2">Passeio de</span> <span class="titlem1">#Helicoptero</span> <span class="titlem2">no</span> <span class="titlem1">#Rio de Janeiro</span></div>
+           Quem nunca sonhou com um vôo panorâmico especial em uma bela cidade como o Rio de Janeiro? Não perca essa oportunidade!
+
+           <!-- <a class="fancybox fancybox.iframe" href="iframe.html">Iframe</a> -->
+        </div>
+  </div>
+
+
+<div class="car_div"><!-- Passeio -->
+  <div class="container_12 center">
+
+      <div class="grid_4"><a name="servicos" id="servicos">
+        <h2><span class="col1" style="margin-bottom: 30px; color: #a3a3a3;">Cristo Redentor</span></h2>
+        <img src="images/page1_img1.jpg" alt="" class="circ"><br>
+        Entre as sete maravilhas do mundo, com seus 38 metros, o Cristo Redentor é um monumento retratando Jesus Cristo, localizado na cidade do Rio de Janeiro no topo do morro do Corcovado, a 709 metros acima do nível do mar. <br />&nbsp;
+      </div>
+
+
+      <div class="grid_4"><a name="servicos" id="servicos">
+        <h2><span class="col1" style="margin-bottom: 30px; color: #a3a3a3;">Pão de Açucar</span></h2>
+        <img src="images/page1_img2.jpg" alt="" class="circ"><br>
+        O morro do Pão de Açúcar é uma formação rochosa situada no bairro da Urca, no município do Rio de Janeiro, no Brasil. Localiza-se na entrada da baía de Guanabara, entre o morro Cara de Cão e o morro da Urca.                                   
+      </div>
+
+      <div class="grid_4"><a name="servicos" id="servicos"> 
+        <h2><span class="col1" style="margin-bottom: 30px; color: #a3a3a3;">Praias</span></h2>
+        <img src="images/page1_img3.jpg" alt="" class="circ"><br>
+        As paisagens da costa litorânea do Estado do Rio de Janeiro estão entre as mais belas do mundo. Enseadas misturam-se com vistas de natureza e a grande cidade urbana do Rio de Janeiro, resultando em lindas fotografias.                                 
+      </div>
+
+  </div>  
+</div>
+
+<!-- Orçamento
+  <div> 
+      <div class="container_12">
+        <div class="grid_12">
+          <h2><a name="clientes" id="clientes">Solicitação de orçamento: <br></h2>
+          <div id="owl">
+            <div class="item">
+              <blockquote>Excedeu nossas expectativas e mostrou que sabem como trabalhar em conjunto. Migramos de datacenter perfeitamente conforme o planejado. Temos a certeza que a nossa TI esta em boas mãos. Recomendamos altamente os serviços de gerenciamento de TI da WebCA Internet. Atualmente estamos trabalhando em uma nova linha de produtos e implantando a Loja Virtual da WebCA, que nos impressionou pelas inúmeras funcionalidades e possibilidades de customização.</blockquote>
+              <div class="alright">
+                <div class="text2">Marcus Vinícius, Gerente de TI da Água Verde</div>
+              </div>
+              
+            </div>
+            <div class="item">
+              <blockquote>Nos apoiando desde 2009, temos hoje 100% de nossos serviços Web hospedados em servidores gerenciados pela WebCA Internet. Somos gratos pela transparência e confiamos na experiência de toda equipe com destaque especial ao nosso amigo Fernando Mendes (Diretor de TI/Socio) que possuí mais de 10 anos na área e sabe o que fazer nas mais diversas situações. Obrigado!</blockquote>
+              <div class="alright">
+                <div class="text2">Luis Felipe Rodrigues, Socio da ABC Estudio e Comunicação</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+-->
+    <div class="container_12 center">
+      <div class="grid_6">
+          <div class="title col1">Nosso grupo</div>
+           Com a experiência de profissionais com mais de 10 anos no mercado, foi fundada em 2008, a WebCA Internet oferecendo inicialmente serviços de Internet como provedor de hospedagem, se tornando uma agência digital 360, oferecendo serviço de desenvolvimento web, infraestrutura, VOIP, gerência de TI entre outros.
+           <br />&nbsp;<br />
+           Temos hoje estrutura de datacenter no Brasil e Estados Unidos de forma a manter os mais de 600 clientes ativos espalhados por todas as regiões do Brasil.
+        </div>
+        <div class="grid_6">
+          <h3>Formas de pagamento</h3>
+          <img src="images/pagseguro1.png" alt="">
+        </div>
+      </div>
+</div>
+<!--==============================footer=================================-->
+
+  <footer>   
+    <div class="container_12">
+      <div class="grid_12  ">
+      <div class="f_phone"><a name="contato" id="contato"></a>Atendimento 24h<span><strong></strong>21 3005-2568</span></div>
+      <div class="socials fa">
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="#"></a>
+      </div>
+        <div class="copy">
+      
+        WebCA Turismo &copy; <span id="copyright-year"></span> <a href="#">Política de Privacidade</a> <!--{%FOOTER_LINK} -->
+        </div>
+      </div>
+    </div>  
+  </footer>
+</body>
+</html>
+

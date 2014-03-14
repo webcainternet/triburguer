@@ -1,0 +1,92 @@
+<html>
+
+<head>
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" href="/css/owl.carousel.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/camera.css">
+
+    <title>WebCA Internet</title>
+</head>
+
+<body style="background-color: #FFF; color: #222; margin: 20px;">
+
+<div>
+	<a href="index.html">
+          <img src="/images/logo.png" style="width: 220px;" alt="WebCA Internet">
+        </a>
+
+<br /><br />
+
+Voc&ecirc; selecionou a forma de pagamento PagSeguro.
+<br /><br />
+Confira atentamente se os dados abaixo est&atilde;o corretos:
+<br /><br />
+
+Sacado: Thiago Theodoro Torres<br />
+Ref: Ferramenta web para o site capasparaiphone.com.br<br />
+Data: 10/02/2014<br />
+Valor: R$ 2.700,00 (at&eacute; 12x sem juros)<br />
+<br />
+Clique no bot&atilde;o abaixo para pagar:
+<br /><br />
+<!-- Declaração do formulário -->  
+<form target="pagseguro" method="post"   
+action="https://pagseguro.uol.com.br/v2/checkout/payment.html">  
+      
+    <!-- Campos obrigatórios -->  
+    <input type="hidden" name="receiverEmail" value="pagseguro@webca.com.br">  
+    <input type="hidden" name="currency" value="BRL">  
+      
+    <!-- Itens do pagamento (ao menos um item é obrigatório) -->  
+    <input type="hidden" name="itemId1" value="0001">  
+    <input type="hidden" name="itemDescription1" value="Ferramenta web para o site capasparaiphone.com.br">  
+    <input type="hidden" name="itemAmount1" value="2700.00">  
+    <input type="hidden" name="itemQuantity1" value="1">  
+    <input type="hidden" name="itemWeight1" value="1000">  
+      
+    <!-- Código de referência do pagamento no seu sistema (opcional) -->  
+    <input type="hidden" name="reference" value="224433343358871565525235">  
+      
+    <!-- Informações de frete (opcionais)  
+    <input type="hidden" name="shippingType" value="1">  
+    <input type="hidden" name="shippingAddressPostalCode" value="01452002">  
+    <input type="hidden" name="shippingAddressStreet" value="Av. Brig. Faria Lima">  
+    <input type="hidden" name="shippingAddressNumber" value="1384">  
+    <input type="hidden" name="shippingAddressComplement" value="5o andar">  
+    <input type="hidden" name="shippingAddressDistrict" value="Jardim Paulistano">  
+    <input type="hidden" name="shippingAddressCity" value="Sao Paulo">  
+    <input type="hidden" name="shippingAddressState" value="SP">  
+    <input type="hidden" name="shippingAddressCountry" value="BRA">   --> 
+      
+    <!-- Dados do comprador (opcionais) -->  
+    <input type="hidden" name="senderName" value="Thiago Theodoro Torres">  
+    <!-- <input type="hidden" name="senderAreaCode" value="19">  
+    <input type="hidden" name="senderPhone" value="81549819">  -->
+    <!-- <input type="hidden" name="senderEmail" value="brenofmj@yahoo.com.br">  -->
+      
+    <!-- submit do form (obrigatório) -->  
+    <input type="image" name="submit"   
+    src="add/botao_pagseguro.gif"   
+    alt="Pague com PagSeguro">  
+      
+</form>
+</div> 
+
+<!--
+<div style="margin-left: 10px; text-align: left;">
+	
+<video id="my_video_1" class="video-js vjs-default-skin" controls
+  autoplay preload="auto" width="640" height="360" 
+  data-setup="{}">
+  <source src="add/PagSeguro01.mp4" type='video/mp4'>
+  <source src="add/PagSeguro01.webm" type='video/webm'>
+  <source src="add/PagSeguro01.flv" type='video/flv'>
+</video>
+
+</div>
+<br /> -->
+</body>
+
+</html>

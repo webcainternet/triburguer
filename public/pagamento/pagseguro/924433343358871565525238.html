@@ -1,0 +1,105 @@
+<head>
+</head>
+
+<body>
+
+<div style="margin-left: 10px;">
+	<table style="">
+	<tbody><tr>
+		<td style="width: 57px">
+			<div id="dvlogo" name="dvlogo" style="background-image: url(https://webca.com.br/img/logo_m2_45.png); height: 45px; width: 57px;" onmouseover="document.getElementById('dvlogo').style.backgroundImage='url(/img/logo_m_45.png)'" onmouseout="document.getElementById('dvlogo').style.backgroundImage='url(/img/logo_m2_45.png)'">
+				&nbsp;
+			</div>
+			
+		</td>
+		<td style="vertical-align: middle;">
+			<a href="/" alt="" border="0" style="text-decoration: none;"><div style="margin-top: 10px;font-size: 28px; color: #404040; text-align: left;" onmouseover="document.getElementById('dvlogo').style.backgroundImage='url(/img/logo_m_45.png)'" onmouseout="document.getElementById('dvlogo').style.backgroundImage='url(/img/logo_m2_45.png)'">&nbsp;WebCA Internet</div></a>
+		</td>
+	</tr>
+	</tbody></table>
+</div>
+
+
+
+
+<link rel="stylesheet" href="https://www.ne.bradesco.com.br/apl/comum/estilo/estiloscorpo.css" type="text/css">
+<script src="https://www.ne.bradesco.com.br/apl/comum/js/funcoesImprimir.js"></script>
+<script language="JavaScript">
+	function doSaveAs(){
+		if (document.execCommand){
+				document.execCommand("SaveAs", true, "boletoCobranca.htm");
+		}
+	}
+</script>
+
+
+
+<div style="text-align: left; margin: 20px;">
+Voc&ecirc; selecionou a forma de pagamento PagSeguro.
+<br /><br />
+Confira atentamente se os dados abaixo est&atilde;o corretos:
+<br /><br />
+
+Sacado: Ione Inacio da Nobrega<br />
+Ref: Desenvolvimento web para o site brechodopovo.com.br<br />
+Data: 05/07/2013<br />
+Valor: R$ 1.895,00 (10x sem juros)<br />
+<br />
+Clique no bot&atilde;o abaixo para pagar:
+<br /><br />
+<!-- Declaração do formulário -->  
+<form target="pagseguro" method="post"   
+action="https://pagseguro.uol.com.br/v2/checkout/payment.html">  
+      
+    <!-- Campos obrigatórios -->  
+    <input type="hidden" name="receiverEmail" value="pagseguro@webca.com.br">  
+    <input type="hidden" name="currency" value="BRL">  
+      
+    <!-- Itens do pagamento (ao menos um item é obrigatório) -->  
+    <input type="hidden" name="itemId1" value="0001">  
+    <input type="hidden" name="itemDescription1" value="Desenvolvimento web para o site brechodopovo.com.br">  
+    <input type="hidden" name="itemAmount1" value="1895.00">  
+    <input type="hidden" name="itemQuantity1" value="1">  
+    <input type="hidden" name="itemWeight1" value="1000">  
+      
+    <!-- Código de referência do pagamento no seu sistema (opcional) -->  
+    <input type="hidden" name="reference" value="REF05072013">  
+      
+    <!-- Informações de frete (opcionais)  
+    <input type="hidden" name="shippingType" value="1">  
+    <input type="hidden" name="shippingAddressPostalCode" value="01452002">  
+    <input type="hidden" name="shippingAddressStreet" value="Av. Brig. Faria Lima">  
+    <input type="hidden" name="shippingAddressNumber" value="1384">  
+    <input type="hidden" name="shippingAddressComplement" value="5o andar">  
+    <input type="hidden" name="shippingAddressDistrict" value="Jardim Paulistano">  
+    <input type="hidden" name="shippingAddressCity" value="Sao Paulo">  
+    <input type="hidden" name="shippingAddressState" value="SP">  
+    <input type="hidden" name="shippingAddressCountry" value="BRA">   --> 
+      
+    <!-- Dados do comprador (opcionais) -->  
+    <input type="hidden" name="senderName" value="Ione Inacio da Nobrega">  
+    <input type="hidden" name="senderAreaCode" value="11">  
+    <input type="hidden" name="senderPhone" value="983892277">  
+    <!-- <input type="hidden" name="senderEmail" value="brenofmj@yahoo.com.br">  -->
+      
+    <!-- submit do form (obrigatório) -->  
+    <input type="image" name="submit"   
+    src="add/botao_pagseguro.gif"   
+    alt="Pague com PagSeguro">  
+      
+</form>
+</div> 
+
+<div style="margin-left: 10px; text-align: left;">
+	
+<video id="my_video_1" class="video-js vjs-default-skin" controls
+  autoplay preload="auto" width="640" height="360" 
+  data-setup="{}">
+  <source src="add/PagSeguro01.mp4" type='video/mp4'>
+  <source src="add/PagSeguro01.webm" type='video/webm'>
+  <source src="add/PagSeguro01.flv" type='video/flv'>
+</video>
+
+</div>
+<br />
+</body>
