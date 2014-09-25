@@ -1821,7 +1821,7 @@ article.testimonial {
 #footer {padding:0 0 22px 0;}
 
 	/* Footer widget */
-	#widget-footer {padding:33px 0 132px 0;}
+	#widget-footer {padding: -8px 0 132px 0;}
 	
 	.widget-footer ul li {
 		font-size:13px;
