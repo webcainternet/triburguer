@@ -1,6 +1,49 @@
 		</div></div><!--.container-->
 	</div><!--.primary_content_wrap-->
 	<footer id="footer">
+
+
+
+<style type="text/css">
+	.socials {
+		margin-bottom: 32px;
+		font-size: 0;
+		line-height: 0;
+	}
+	.fa {
+		display: inline-block;
+		font-family: FontAwesome;
+		font-style: normal;
+		font-weight: normal;
+		line-height: 1;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+.socials a {
+font-size: 30px;
+width: 52px;
+height: 52px;
+line-height: 54px;
+display: inline-block;
+color: #f98c83;
+background-color: #fff;
+border-radius: 500px;
+}
+a {
+text-decoration: none;
+color: inherit;
+outline: none;
+transition: 0.5s ease;
+-o-transition: 0.5s ease;
+-webkit-transition: 0.5s ease;
+}
+</style>
+<div class="socials fa">
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="#"></a>
+</div>
+
 		<?php if( is_front_page() ) { ?><div class="bottombar"><div><div class="container_12 clearfix">
 			
 				<div id="widget-footer" class="clearfix">
@@ -53,5 +96,8 @@
 	</script>
   <!-- Show Google Analytics -->	
 <?php } ?>
+
+
+
 </body>
 </html>

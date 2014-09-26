@@ -1,3 +1,30 @@
+
+<style type="text/css">
+	.socials {
+		margin-bottom: 32px;
+		font-size: 0;
+		line-height: 0;
+	}
+	.fa {
+		display: inline-block;
+		font-family: FontAwesome;
+		font-style: normal;
+		font-weight: normal;
+		line-height: 1;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+
+</style>
+<div class="socials fa">
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="#"></a>
+
+
+        ddddd
+      </div>
+
 <!DOCTYPE html>
 <!--[if lt IE 7 ]><html class="ie ie6" <?php language_attributes();?>> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" <?php language_attributes();?>> <![endif]-->
@@ -172,7 +199,7 @@
 				<div class="grid_12">
 					<div class="clearfix">
 						<div class="logo">
-						<a href="<?php bloginfo('url'); ?>/" id="logo_img"><img src="<?php bloginfo('template_url'); ?>/images/logo_img.png" alt="<?php bloginfo('name'); ?>" title="<?php bloginfo('description'); ?>"></a>
+						<a href="<?php bloginfo('url'); ?>/" id="logo_img" style="display: none;"><img src="<?php bloginfo('template_url'); ?>/images/logo_img.png" alt="<?php bloginfo('name'); ?>" title="<?php bloginfo('description'); ?>"></a>
 							  <?php if(of_get_option('logo_type') == 'text_logo'){?>
 								<?php if( is_front_page() || is_home() || is_404() ) { ?>
 								  <h1><a href="<?php bloginfo('url'); ?>/" title="<?php bloginfo('description'); ?>"><?php bloginfo('name'); ?></a></h1>
