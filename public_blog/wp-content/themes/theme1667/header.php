@@ -1,30 +1,3 @@
-
-<style type="text/css">
-	.socials {
-		margin-bottom: 32px;
-		font-size: 0;
-		line-height: 0;
-	}
-	.fa {
-		display: inline-block;
-		font-family: FontAwesome;
-		font-style: normal;
-		font-weight: normal;
-		line-height: 1;
-		-webkit-font-smoothing: antialiased;
-		-moz-osx-font-smoothing: grayscale;
-	}
-
-</style>
-<div class="socials fa">
-        <a href="#"></a>
-        <a href="#"></a>
-        <a href="#"></a>
-
-
-        ddddd
-      </div>
-
 <!DOCTYPE html>
 <!--[if lt IE 7 ]><html class="ie ie6" <?php language_attributes();?>> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" <?php language_attributes();?>> <![endif]-->
@@ -32,25 +5,10 @@
 <!--[if IE 9 ]><html class="ie ie9" <?php language_attributes();?>> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--><html <?php language_attributes();?>> <!--<![endif]-->
 <head>
-	<title><?php if ( is_category() ) {
-		echo __('Category Archive for &quot;', 'theme1667'); single_cat_title(); echo __('&quot; | ', 'theme1667'); bloginfo( 'name' );
-	} elseif ( is_tag() ) {
-		echo __('Tag Archive for &quot;', 'theme1667'); single_tag_title(); echo __('&quot; | ', 'theme1667'); bloginfo( 'name' );
-	} elseif ( is_archive() ) {
-		wp_title(''); echo __(' Archive | ', 'theme1667'); bloginfo( 'name' );
-	} elseif ( is_search() ) {
-		echo __('Search for &quot;', 'theme1667').wp_specialchars($s).__('&quot; | ', 'theme1667'); bloginfo( 'name' );
-	} elseif ( is_home() || is_front_page()) {
-		bloginfo( 'name' ); echo ' | '; bloginfo( 'description' );
-	}  elseif ( is_404() ) {
-		echo __('Error 404 Not Found | ', 'theme1667'); bloginfo( 'name' );
-	} elseif ( is_single() ) {
-		wp_title('');
-	} else {
-		echo wp_title( ' | ', false, right ); bloginfo( 'name' );
-	} ?></title>
+	<title>TRI BURGER</title>
 	<meta name="description" content="<?php wp_title(); echo ' | '; bloginfo( 'description' ); ?>" />
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
+	<link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="icon" href="<?php bloginfo( 'template_url' ); ?>/favicon.ico" type="image/x-icon" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
@@ -226,6 +184,13 @@
 							)); 
 						  ?>
 						</nav><!--.primary-->
+
+						
+					</div>
+					<div style="float: right; width: 300px;margin-right: 25px; text-align: right; color: #FFF;">
+					Rua Haddock Lobo, 351<br />
+					Santo André - SP<br />
+					11 2324-8055
 					</div>
 				</div>
 			</div><!--.container_12-->

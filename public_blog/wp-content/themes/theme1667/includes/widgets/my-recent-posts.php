@@ -24,7 +24,7 @@ class MY_PostWidget extends WP_Widget {
 									 $wp_query= null;
 									 $wp_query = new WP_Query();  ?>
 						
-								<ul class="latestpost">
+								<?php /* <ul class="latestpost">
 								
 								<?php $querycat = $category; ?>
 								
@@ -57,6 +57,62 @@ class MY_PostWidget extends WP_Widget {
 								<?php endwhile; ?>
 								</ul>
 								<?php endif; ?>
+								*/ ?>
+
+
+								<ul class="latestpost">
+									<li class="clearfix">
+										<div class="text-box">
+											<h4><a href="#" rel="bookmark" title="BURGERS">BURGERS</a></h4>
+												<div style="background-image: url('/wp-content/uploads/2014/09/img1.png');
+															background-size: 250px;
+															border-radius: 125px;
+															width: 250px;
+															height: 250px;
+															margin-bottom: 10px;">
+													&nbsp;
+												</div>
+												<div class="excerpt">
+													Burgers grelhados como se deve ! Nosso preparo no american style gera um sabor diferente de qualquer experiência que ja teve no Brasil. Buscamos influências Norte Americanas para o preparo do nosso blend.
+												</div>
+										</div>
+									</li>
+
+									<li class="clearfix">
+										<div class="text-box">
+											<h4><a href="#" rel="bookmark" title="DRINK">DRINK</a></h4>
+												<div style="background-image: url('/wp-content/uploads/2014/09/img3.png');
+															background-size: 250px;
+															border-radius: 125px;
+															width: 250px;
+															height: 250px;
+															margin-bottom: 10px;">
+													&nbsp;
+												</div>
+												<div class="excerpt">
+													Nossas bebidas são servidas nos clássicos JAR GLASS!
+												</div>
+										</div>
+									</li>
+
+									<li class="clearfix">
+										<div class="text-box">
+											<h4><a href="#" rel="bookmark" title="DESSERT">DESSERT</a></h4>
+												<div style="background-image: url('/wp-content/uploads/2014/09/img2.png');
+															background-size: 250px;
+															border-radius: 125px;
+															width: 250px;
+															height: 250px;
+															margin-bottom: 10px;">
+													&nbsp;
+												</div>
+												<div class="excerpt">
+													Deliciósos mini Churros, recheados com doce de leite e side topping de Nutella ou Doce de Leite.
+												</div>
+										</div>
+									</li>
+								</ul>
+
 								
 								<?php $wp_query = null; $wp_query = $temp;?>
 								
@@ -91,12 +147,12 @@ class MY_PostWidget extends WP_Widget {
       <p><label for="<?php echo $this->get_field_id('category'); ?>"><?php _e('Category Slug:', 'theme1667'); ?> <input class="widefat" id="<?php echo $this->get_field_id('category'); ?>" name="<?php echo $this->get_field_name('category'); ?>" type="text" value="<?php echo $category; ?>" /></label></p>
       
       <p><label for="<?php echo $this->get_field_id('count'); ?>"><?php _e('Posts per page:'); ?><input class="widefat" style="width:30px; display:block; text-align:center" id="<?php echo $this->get_field_id('count'); ?>" name="<?php echo $this->get_field_name('count'); ?>" type="text" value="<?php echo $count; ?>" /></label></p>
-			
-			<p><label for="<?php echo $this->get_field_id('excerpt_count'); ?>"><?php _e('Excerpt length (words):'); ?><input class="widefat" style="width:30px; display:block; text-align:center" id="<?php echo $this->get_field_id('excerpt_count'); ?>" name="<?php echo $this->get_field_name('excerpt_count'); ?>" type="text" value="<?php echo $excerpt_count; ?>" /></label></p>
-			
-			 <p><label for="<?php echo $this->get_field_id('linktext'); ?>"><?php _e('Link Text:', 'theme1667'); ?> <input class="widefat" id="<?php echo $this->get_field_id('linktext'); ?>" name="<?php echo $this->get_field_name('linktext'); ?>" type="text" value="<?php echo $linktext; ?>" /></label></p>
-			 
-			 <p><label for="<?php echo $this->get_field_id('linkurl'); ?>"><?php _e('Link Url:', 'theme1667'); ?> <input class="widefat" id="<?php echo $this->get_field_id('linkurl'); ?>" name="<?php echo $this->get_field_name('linkurl'); ?>" type="text" value="<?php echo $linkurl; ?>" /></label></p>
+
+	<p><label for="<?php echo $this->get_field_id('excerpt_count'); ?>"><?php _e('Excerpt length (words):'); ?><input class="widefat" style="width:30px; display:block; text-align:center" id="<?php echo $this->get_field_id('excerpt_count'); ?>" name="<?php echo $this->get_field_name('excerpt_count'); ?>" type="text" value="<?php echo $excerpt_count; ?>" /></label></p>
+
+	<p><label for="<?php echo $this->get_field_id('linktext'); ?>"><?php _e('Link Text:', 'theme1667'); ?> <input class="widefat" id="<?php echo $this->get_field_id('linktext'); ?>" name="<?php echo $this->get_field_name('linktext'); ?>" type="text" value="<?php echo $linktext; ?>" /></label></p>
+
+	<p><label for="<?php echo $this->get_field_id('linkurl'); ?>"><?php _e('Link Url:', 'theme1667'); ?> <input class="widefat" id="<?php echo $this->get_field_id('linkurl'); ?>" name="<?php echo $this->get_field_name('linkurl'); ?>" type="text" value="<?php echo $linkurl; ?>" /></label></p>
         <?php 
     }
 

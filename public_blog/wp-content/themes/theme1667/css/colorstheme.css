@@ -7,19 +7,21 @@ body{
 }
 .bg-top {height:71px;}
 .bg-top > div {}
-.man-top {background:url(../images/top-man.jpg) center top no-repeat;}
+.man-top { /* background:url(../images/top-man.jpg) center top no-repeat; */}
 .bottombar > div{padding-top:23px; background:url(../images/top-footer-home.gif) center top repeat-x;}
 .copyright {background:url(../images/top-footer.gif) center top repeat-x;}
 .home .copyright {background:none;}
-a {color:#f69d87;}
-td a {color:#f69d87;}
-dl dt {color:#f69d87; font-weight:bold;}
-.address dd a {color:#f69d87;}
+a {color:#f36a22;}
+td a {color:#f36a22;}
+dl dt {color:#f36a22; font-weight:bold;}
+.address dd a {color:#f36a22;}
 /* ----------------------------------------
 				Header
 ---------------------------------------- */
 #header {background:url(../images/top-page.jpg) center bottom repeat-x;}
-.home  #header {background:url(../images/bg-header.jpg) center 71px repeat-x;}
+.home  #header {background:url(../images/bg-header.jpg) center 150px repeat-x;
+background-size: 100%;
+}
 #logo_img {float: left; margin-right:3px;}
 .bottombar {background:url(../images/bg-footer.gif) center 0 repeat;}
 /* Logo */
@@ -31,11 +33,11 @@ dl dt {color:#f69d87; font-weight:bold;}
 .logo h1,
 .logo h2,
 .logo h1 a,
-.logo h2 a {color:#f69d87;}
+.logo h2 a {color:#f36a22;}
 .logo .tagline {color:#c4b2a7;}
 
 	/* Header widget */
-	.text, .text-1, .text-2 {color:#f69d87;}
+	.text, .text-1, .text-2 {color:#f36a22;}
 /* ----------------------------------------
 				Content
 ---------------------------------------- */
@@ -50,36 +52,36 @@ dl dt {color:#f69d87; font-weight:bold;}
 	.widget-home-center {background:url(../images/separator.png) center bottom repeat-x;}
 
 	.blogroll li a {color:#6b6b6b;}
-	.blogroll li a:hover {color:#f69d87; }
+	.blogroll li a:hover {color:#f36a22; }
 	
 	/* ----------------------------------------
 		Recent Post - Before Content Area
 	---------------------------------------- */
 	.widget-home-top .latestpost li h4 {
-		color:#f69d87;
+		color:#f36a22;
 		background: url(../images/line-1.png) 0 bottom repeat-x;
 	}
-	.widget-home-top .latestpost li h4 a {color:#8c6b54;}
+	.widget-home-top .latestpost li h4 a {color:#3b2313;}
 	.widget-home-top .latestpost li .excerpt {color:#6b6b6b;}
 	.widget-home-top .text-box:hover .excerpt {color:#424242;}
-	.widget-home-top .text-box:hover h4 a {color:#8c6b54;}
-	.widget-home-top .text-box:hover h4 a:hover {color:#f69d87;}
+	.widget-home-top .text-box:hover h4 a {color:#3b2313;}
+	.widget-home-top .text-box:hover h4 a:hover {color:#f36a22;}
 	.widget-home-top .text-box:hover .excerpt {}
-	.widget-home-top .text-box:hover .link {color:#f69d87;}
+	.widget-home-top .text-box:hover .link {color:#f36a22;}
 	.widget-home-top .text-box:hover .link:hover {}
 	
 	/* ----------------------------------------
 		Recent Post - After Content Area
 	---------------------------------------- */
 	.widget-home-bottom .latestpost li h4 {
-		color:#f69d87;
+		color:#f36a22;
 		border-bottom:none;
 	}
 	.widget-home-bottom .latestpost li h4 a {color:#6b6b6b; font-weight:bold;}
-	.widget-home-bottom .latestpost li h4 a:hover {color:#f69d87;}
+	.widget-home-bottom .latestpost li h4 a:hover {color:#f36a22;}
 	.widget-home-bottom	time {
-		color:#f69d87;
-		background:#f69d87;
+		color:#f36a22;
+		background:#f36a22;
 	}
 		.widget-home-bottom	time .day, .widget-home-bottom	time .mounth {color:#fff;}
 	
@@ -93,15 +95,15 @@ dl dt {color:#f69d87; font-weight:bold;}
 
 	.widget ul li{background:url(../images/list-marker.png) 0 0px no-repeat;}
 	.widget ul li a {color:#577b77;}
-	.widget ul li a:hover {color:#f69d87;}
+	.widget ul li a:hover {color:#f36a22;}
 	
 	/* ----------------------------------------
 				Recent Post - Sidebar
 	---------------------------------------- */
 	.widget .latestpost li {background:none;}
 	
-	.widget .latestpost li h4, .widget .latestpost li h4 a {color:#8c6b54;}
-	.widget .latestpost li h4 a:hover {color:#f69d87;}
+	.widget .latestpost li h4, .widget .latestpost li h4 a {color:#3b2313;}
+	.widget .latestpost li h4 a:hover {color:#f36a22;}
 	
 	.widget .latestpost li .excerpt {color:#6b6b6b; font-weight:bold;}
 	.widget .latestpost li time {color:#6b6b6b;}
@@ -109,36 +111,38 @@ dl dt {color:#f69d87; font-weight:bold;}
 	/* ----------------------------------------
 					Calendar
 	---------------------------------------- */
-	#wp-calendar caption {color:#8c6b54;}
+	#wp-calendar caption {color:#3b2313;}
 	#wp-calendar thead tr {background:#f5f5f5;}
 	#wp-calendar tfoot tr {border-top: 1px solid #b9b9b9;}
-	#wp-calendar thead th {color:#8c6b54;}
+	#wp-calendar thead th {color:#3b2313;}
 
 /* ----------------------------------------
 				Navigations
 ---------------------------------------- */
 .sf-menu > li {background:none;}
 .sf-menu > li > a {color:#fff;}
-.sf-menu > li:hover, .sf-menu > li.sfHover, .sf-menu > li.current-menu-item {background:#f69d87;}
+.sf-menu > li:hover, .sf-menu > li.sfHover, .sf-menu > li.current-menu-item {
+font-weight: bold;
+}
 .sf-menu > li:hover >a, .sf-menu > li.sfHover >a, .sf-menu > li.current-menu-item >a {color:#fff;}
 
 
 .sf-menu ul > li > a {color:#fff; background:#577b77;}
-.sf-menu ul > li:hover > a, .sf-menu ul > li.sfHover > a, .sf-menu ul > li.current-menu-item > a {color:#fff; background:#f69d87;}
+.sf-menu ul > li:hover > a, .sf-menu ul > li.sfHover > a, .sf-menu ul > li.current-menu-item > a {color:#fff; background:#f36a22;}
 
 /* ---------------------------------------
  Heading (h1, h2, h3, h4, h5, h6)
 --------------------------------------- */
-	h1, h2, h3 {color:#8c6b54; background:url(../images/line-1.png) 0 bottom repeat-x;}
+	h1, h2, h3 {color:#3b2313; background:url(../images/line-1.png) 0 bottom repeat-x;}
 	.post-holder .entry-header h2 , .folio-desc h3 , .logo h1,.logo h2, .post-holder.single-post h1{background:none;}
 	.logo h1 a, .logo h2 a{color:#fff;}
-	.home h5, .home h6, .home h5 a {color:#f69d87;}
+	.home h5, .home h6, .home h5 a {color:#f36a22;}
 	h4 {color:#fff;}
 	h5, h5 a ,h6 {color:#6b6b6b; font-weight:bold;}
 	
 	
-	h5 a:hover {color:#f69d87;}
-	h1 span, h3 span, .home h5 a:hover {color:#8c6b54;}
+	h5 a:hover {color:#f36a22;}
+	h1 span, h3 span, .home h5 a:hover {color:#3b2313;}
 	
 	#gallery .portfolio h3, .no-results h2{border-bottom:none;}
 /* ---------------------------------------
@@ -147,30 +151,30 @@ dl dt {color:#f69d87; font-weight:bold;}
 #footer-text {color:#fff;}
 .site-name {color:#fff;}
 .text-bot {color:#fff; background:url(../images/footer-marker.gif) 0 9px no-repeat;}
-.site-name:hover, .text-bot:hover {color:#f69d87;}
+.site-name:hover, .text-bot:hover {color:#f36a22;}
 
 .widget-footer ul li a {color:#dfc4b3;}
 .widget-footer ul li a:hover {color:#fff;}
 
-nav.footer ul li a {color:#f69d87;}
+nav.footer ul li a {color:#f36a22;}
 nav.footer ul li a:hover, nav.footer ul li.current-menu-item  a {color:#222222;}
 
 /* ---------------------------------------
 				Misc
 ---------------------------------------- */
 .link, .button {color:#577b77;}
-.link:hover, .button:hover {color:#f69d87;}
+.link:hover, .button:hover {color:#f36a22;}
 
 .button-1, .button-2:hover {
 				background:#ffffff;
 				color:#577b77;}
 .button-2, .button-1:hover {background:url(../images/bg-button.gif) 0 0 repeat #896851; color:#fff;}
 
-.main-slogan{color:#6ba59e;}
-.main-slogan .slogan{color:#f6a28d;}
+.main-slogan{color:#a54723;}
+.main-slogan .slogan{color:#f36a22;}
 
-.main-slogan:hover {color:#f69d87;}
-.main-slogan:hover > .slogan {color:#6ba59e;}
+.main-slogan:hover {color:#f36a22;}
+.main-slogan:hover > .slogan {color:#a54723;}
 
 
 /* ----------------------------------------
@@ -180,7 +184,7 @@ nav.footer ul li a:hover, nav.footer ul li.current-menu-item  a {color:#222222;}
 
 #gallery .portfolio .folio-desc h3,
 #gallery .portfolio .folio-desc h3 a {color:#577b77;}
-#gallery .portfolio .folio-desc h3 a:hover {color:#f69d87;}
+#gallery .portfolio .folio-desc h3 a:hover {color:#f36a22;}
 
 #gallery .portfolio li a.image-wrap {background:none;}
 #gallery .portfolio li a.image-wrap:hover {}
@@ -199,28 +203,28 @@ nav.footer ul li a:hover, nav.footer ul li.current-menu-item  a {color:#222222;}
 	.post-holder .entry-header h2, 
 	.post-holder .entry-header h2 a,
 	.post-holder.single-post h1 {color:#577b77;}
-	.post-holder .entry-header h2 a:hover {color:#8c6b54;}
+	.post-holder .entry-header h2 a:hover {color:#3b2313;}
 
 .dates {
-	color:#f69d87;
-	background:#f69d87;
+	color:#f36a22;
+	background:#f36a22;
 }
 	.dates .day, .dates .mounth {color:#fff;}
 
 .post-meta {color:#6b6b6b;}
 	
 .category-place a {color:#6b6b6b; font-weight:bold;}
-.category-place a:hover {color:#f69d87;}
+.category-place a:hover {color:#f36a22;}
 
-.author-place a {color:#f69d87; font-weight:bold;}
+.author-place a {color:#f36a22; font-weight:bold;}
 .author-place a:hover {color:#6b6b6b;}
 
 .comments {background:url(../images/comment-icon.png) 0 0 no-repeat;}
 .comments a {color:#6b6b6b;}
-.comments a:hover {color:#f69d87;}
+.comments a:hover {color:#f36a22;}
 
 .featured-thumbnail {padding:1px; background:none;}
-.featured-thumbnail:hover {background:#f69d87;}
+.featured-thumbnail:hover {background:#f36a22;}
 .featured-thumbnail.no-hover:hover {}
 .single-post .featured-thumbnail:hover {background:none;}
 
@@ -228,13 +232,13 @@ nav.footer ul li a:hover, nav.footer ul li.current-menu-item  a {color:#222222;}
 		Page Navigaton (wp-pagenavi) 
 ---------------------------------------- */
 .wp-pagenavi a, .wp-pagenavi span {color:#6b6b6b;}
-.wp-pagenavi a:hover, .wp-pagenavi span.current {color:#f69d87;}
+.wp-pagenavi a:hover, .wp-pagenavi span.current {color:#f36a22;}
 
 /* ----------------------------------------
 			Author - Single Post
 ---------------------------------------- */
 #post-author .gravatar img {border:1px solid #363636;}
-#post-author h3 a:hover {color:#f69d87;}
+#post-author h3 a:hover {color:#f36a22;}
 
 /* ----------------------------------------
 		Author Page - About Author 
@@ -252,13 +256,13 @@ li.comment .comment-body {
 .comment-meta, .comment-meta a {color:#6b6b6b;}
 .comment-meta a{background:url(../images/date-icon.gif) 100% 0 no-repeat;}
 .comment-meta .comment-edit-link {background:none;}
-.comment-meta a:hover {color:#f69d87;}
+.comment-meta a:hover {color:#f36a22;}
 
-.comment-author .fn, .comment-author .fn a {color:#f69d87; font-weight: bold;}
-.comment-author .fn a:hover {color:#8c6b54;}
+.comment-author .fn, .comment-author .fn a {color:#f36a22; font-weight: bold;}
+.comment-author .fn a:hover {color:#3b2313;}
 
 .reply a {color:#577b77;}
-.reply a:hover {color:#f69d87; text-decoration:underline;}
+.reply a:hover {color:#f36a22; text-decoration:underline;}
 
 /* ----------------------------------------
 			Tags
@@ -271,7 +275,7 @@ li.comment .comment-body {
 .tagcloud a:hover,
 .post-footer a:hover {color:#222222; background:#ffcd01;}
 
-nav.oldernewer a:hover {color:#f69d87;}
+nav.oldernewer a:hover {color:#f36a22;}
 
 /* ----------------------------------------
 			Image styling 
@@ -290,29 +294,29 @@ input[type="text"], textarea {
 	border:1px solid #bfbdb6;
 }
 input[type="submit"], input[type="reset"]{color:#577b77; background:none; border:none; text-decoration: underline;}
-input[type="submit"]:hover, input[type="reset"]:hover {color:#f69d87;}
+input[type="submit"]:hover, input[type="reset"]:hover {color:#f36a22;}
 
 
 /* Subcribe form */
-.nsu-form {color:#f69d87;}
+.nsu-form {color:#f36a22;}
 input.nsu-field {border:1px solid rgba(225,225,225,0.2); background:none; color:#fff;}
 .ie input.nsu-field {border:1px solid #aa8c78;}
 input[type="submit"].nsu-submit {
-				background:#f69d87;
+				background:#f36a22;
 				color:#fff;
 				}
 input[type="submit"].nsu-submit:hover {background:#fff; color:#577b77;}
 /* ----------------------------------------
 				 404
 ---------------------------------------- */
-.error404-num {color:#f69d87;}
+.error404-num {color:#f36a22;}
 hgroup h1, hgroup h2 {border:none;}
 
 /* ----------------------------------------
 				Testimonials
 ---------------------------------------- */
 .testi-single, article.testimonial {background:url(../images/quotes.png) no-repeat 200px 20px; border:none;}
-.name-testi {color:#f69d87;}
+.name-testi {color:#f36a22;}
 /* ----------------------------------------
 				Shortcodes
 ---------------------------------------- */
@@ -320,12 +324,12 @@ hgroup h1, hgroup h2 {border:none;}
 	/*----------------------------------------
 						FAQs
 	---------------------------------------- */
-	.faq_list dt, .faq_list span.marker {color:#f69d87;}
+	.faq_list dt, .faq_list span.marker {color:#f36a22;}
 
 	/* ----------------------------------------
 					Dropcap
 	---------------------------------------- */
 	.dropcap {
 		color:#fff;
-		background:#f69d87;
+		background:#f36a22;
 	}
