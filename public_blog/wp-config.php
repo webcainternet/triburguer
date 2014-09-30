@@ -27,13 +27,13 @@ switch ($_SERVER['SERVER_ADDR'])
 		define('DB_PASSWORD', 'root');
 		define('DB_HOST', 'localhost');
 		break;
-	case '192.168.0.107':
+	case '10.0.1.7':
 		define('DB_NAME', '3burger');
 		define('DB_USER', 'root');
 		define('DB_PASSWORD', 'root');
 		define('DB_HOST', 'localhost');
 		break;
-	case '192.168.0.104':
+	case '10.0.1.6':
 		define('DB_NAME', '3burger');
 		define('DB_USER', 'root');
 		define('DB_PASSWORD', 'root');

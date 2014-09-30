@@ -207,5 +207,5 @@
 			</div>
 		<?php } ?>
 	</header>
-	<div class="primary_content_wrap"><div>
+	<div class="primary_content_wrap"><div style="padding-top: 40px;">
 		<div class="container_12 clearfix">
